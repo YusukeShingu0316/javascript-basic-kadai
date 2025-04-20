@@ -4,7 +4,7 @@ const parentList = document.getElementById('text');
 addBtn.addEventListener('click', () => {
     
   const childList = document.createElement('text');
-  childList.textContent = 'ボタンをクリックしました';
+  parentList.textContent = 'ボタンをクリックしました';
 
   while (parentList.firstChild) {
     parentList.removeChild(parentList.firstChild);
